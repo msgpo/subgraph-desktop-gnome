@@ -1,0 +1,141 @@
+Source: meta-gnome3
+Section: metapackages
+Priority: optional
+Maintainer: David McKinney <mckinney@subgraph.com>
+Uploaders: David McKinney <mckinney@subgraph.com>
+Standards-Version: 3.9.5
+Conflicts: gnome, gnome-core
+Provides: gnome, gnome-core
+Replaces: gnome, gnome-core
+Build-Depends: cdbs (>= 0.4.90),
+               debhelper (>= 8),
+               gnome-pkg-tools (>= 0.10)
+
+Package: subgraph-desktop-gnome
+Version: 1.7
+Architecture: linux-any
+Depends: libatk-adaptor,
+         task-desktop,
+         task-laptop,
+         at-spi2-core,
+	 adwaita-icon-theme,
+         baobab,
+         brasero,
+         caribou,
+	 caribou-antler,
+         libcaribou-gtk-module,
+         libcaribou-gtk3-module,
+         dconf-gsettings-backend,
+         dconf-tools,
+         eog,
+         evince,
+         fonts-cantarell,
+         sound-theme-freedesktop,
+         gnome-calculator,
+         gconf2,
+         gdm3 [linux-any],
+         glib-networking,
+         gnome-backgrounds,
+         mobile-broadband-provider-info,
+         x11-session-utils,
+         x11-utils,
+         x11-xkb-utils,
+         x11-xserver-utils,
+         mesa-utils,
+         lsb-release,
+         kbd,
+         xserver-xorg,
+         xserver-xephyr,
+         gnome-system-tools,
+         gnome-screensaver,
+         gnome-control-center,
+         gnome-dictionary,
+         gnome-disk-utility [linux-any],
+         gnome-font-viewer,
+         gnome-icon-theme,
+         gnome-icon-theme-extras,
+         gnome-icon-theme-symbolic,
+         gnome-themes-standard,
+         gnome-video-effects,
+         gnome-desktop3-data,
+         dmz-cursor-theme,
+         gnome-keyring,
+         gnome-power-manager,
+         libpam-gnome-keyring,
+         gnome-menus,
+         gnome-packagekit,
+         gnome-screenshot,
+         gnome-session-bin,
+         gnome-session-common,
+         gnome-session,
+         gnome-settings-daemon,
+         gnome-shell [linux-any],
+         gnome-system-log,
+         gnome-system-monitor,
+         gnome-terminal,
+         gnome-session-canberra,
+         gnome-themes-standard,
+         gsettings-desktop-schemas,
+         gstreamer1.0-plugins-base,
+         gstreamer1.0-plugins-good,
+         gstreamer1.0-pulseaudio,
+         libgtk-3-common,
+         gtk2-engines,
+         gvfs-backends,
+         gvfs-bin,
+         gvfs-fuse [linux-any],
+         libcanberra-pulse,
+         gkbd-capplet,
+         metacity,
+         mousetweaks,
+         nautilus,
+         notification-daemon,
+         policykit-1-gnome,
+         pulseaudio,
+         desktop-base,
+         network-manager-gnome [linux-any],
+# Official apps modules
+         file-roller,
+         gedit,
+         gnome-color-manager,
+         gnome-nettool [!kfreebsd-any],
+         seahorse,
+         libcryptui0a,
+         seahorse-daemon,
+# More applications
+         alacarte,
+         gnome-tweak-tool,
+         xdg-utils,
+         xdg-user-dirs,
+         xdg-user-dirs-gtk,
+# Plugins for core and apps
+         gedit-plugins,
+         gnome-shell-extensions [linux-any],
+# For debconf
+         libgtk2-perl,
+# Depends/Recommends
+         gnome-brave-icon-theme,
+         desktop-file-utils,
+         i965-va-driver,
+         console-data,
+         unicode-data,
+         gksu,
+         libgksu2-0,
+         hwdata,
+# networking
+         iproute,
+         iw,
+         libnss-myhostname,         
+         ${misc:Depends}
+Suggests: dia-gnome,
+          gnome-boxes [amd64 i386],
+          gnucash,
+          anacron
+Description: Subgraph GNOME Desktop Environment -- minimal components
+ These are the minimal components of the GNOME Desktop environment, 
+ an intuitive and attractive desktop.
+ .
+ This metapackage depends on a basic set of programs, including a file
+ manager, an image viewer, and other tools.
+ .
+ It contains the unofficial “minimal” modules of the Subgraph GNOME desktop.

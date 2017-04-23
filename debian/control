@@ -1,18 +1,16 @@
-Source: meta-gnome3
+Source: subgraph-desktop-gnome
 Section: metapackages
 Priority: optional
 Maintainer: David McKinney <mckinney@subgraph.com>
 Uploaders: David McKinney <mckinney@subgraph.com>
-Standards-Version: 3.9.5
-Conflicts: gnome, gnome-core
-Provides: gnome, gnome-core
-Replaces: gnome, gnome-core
-Build-Depends: cdbs (>= 0.4.90),
-               debhelper (>= 8),
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 8),
                gnome-pkg-tools (>= 0.10)
 
 Package: subgraph-desktop-gnome
-Version: 1.7
+Conflicts: gnome, gnome-core
+Provides: gnome, gnome-core
+Replaces: gnome, gnome-core
 Architecture: linux-any
 Depends: libatk-adaptor,
          task-desktop,
